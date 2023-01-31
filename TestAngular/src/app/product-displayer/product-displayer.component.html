@@ -1,0 +1,5 @@
+<div *ngFor="let product of products; index as i; first as isFirst">
+    <p *ngIf="product.stock">
+        {{product.name}}: {{product.price}}$. Stock restant: {{product.stock}}
+    </p>
+</div>
